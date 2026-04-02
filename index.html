@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <!-- Layout: navbar + app content (hero/about/contact) -->
+
+    <!-- Navbar com links de ancoragem -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-links">
+      <div class="nav-indicator"></div>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">Quem sou eu</a>
+      <a href="#contact">Contato</a>
+    </div>
+  </nav>
+
+  <div id="app">
+
+        <!-- Hero com canvas ASCII e cartão de perfil -->
+    <section id="home" class="hero">
+      <canvas id="ascii-canvas"></canvas>
+      <div class="hero-content">
+        <div class="profile-card">
+          <div class="profile-image-placeholder">
+            <img src="/image/profile_image.jpg" alt="Foto de Gustavo" class="profile-image">
+          </div>
+          <h1>Gustavo</h1>
+          <p>Estudante de Ciência da Computação</p>
+          <a href="#contact" class="cta-button">Fale Comigo</a>
+        </div>
+      </div>
+    </section>
+
+        <!-- Seção Sobre com gráfico de linguagens e carrossel de repositórios -->
+    <section id="about" class="content-section">
+
+      <div class="lava-lamp-bg">
+        <div class="lava-blob blob-1"></div>
+        <div class="lava-blob blob-2"></div>
+        <div class="lava-blob blob-3"></div>
+        <div class="lava-blob blob-4"></div>
+        <div class="lava-blob blob-5"></div>
+      </div>
+
+      <div class="section-header">
+        <h2>Quem sou eu</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="about-grid">
+
+        <div class="card glass-card about-text-card">
+          <p>Olá! Sou um estudante de Ciência da Computação apaixonado por tecnologia e inovação.</p>
+          <p class="secondary-text">Atualmente procurando oportunidades para contribuir e aprender com projetos desafiadores.</p>
+        </div>
+
+        <div class="card glass-card about-chart-card">
+          <div class="chart-title-block">
+            <h3 class="chart-title">Linguagens mais usadas</h3>
+            <div class="chart-title-accent"></div>
+          </div>
+          <div id="languages-chart-container" class="chart-loading-state">
+            <div class="chart-spinner"></div>
+            <span>Carregando linguagens…</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="repos-section">
+        <h3 class="repos-title">Meus Repositórios</h3>
+        <div id="github-repos-container" class="carousel-container">
+          <div class="loading-repos">Carregando repositórios...</div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Seção Contato com links sociais -->
+    <section id="contact" class="content-section">
+      <div class="section-header">
+        <h2>Contato</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="card glass-card contact-card">
+        <p>Tem um projeto em mente ou apenas quer bater um papo? Adoraria conversar.</p>
+        <div class="social-links">
+          <a href="https://github.com/gufonseca-code" target="_blank" rel="noreferrer" class="cta-button outline">GitHub</a>
+          <a href="https://www.linkedin.com/in/gufonsecaoliveira" target="_blank" rel="noreferrer" class="cta-button outline">LinkedIn</a>
+          <a href="mailto:gufonseca.oliveira@gmail.com" class="cta-button outline">Email</a>
+          <a href="resume/Curriculo.pdf" target="_blank" rel="noreferrer" class="cta-button outline" id="curriculo-btn">Currículo</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
